@@ -1,2 +1,2 @@
 # Accessible-Class-Portal
-https://bitterbeet.github.io/Accessible-Class-Portal/ 
+https://bitterbeet.github.io/Universal-Design/ 
