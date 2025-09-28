@@ -4,9 +4,10 @@
     --color-text: #222;
     --color-muted: #555;
     --color-background: #fff;
-    --color-accent: #2a6592;
+    --color-accent: #000;
     --color-border: #ddd;
     --color-note-bg: #f9f9f9;
+    --nav-width: 220px;
   }
   
   html {
@@ -19,13 +20,61 @@
     color: var(--color-text);
     background: var(--color-background);
     margin: 0;
-    padding: 2rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
   }
-
-  h1, h2, h3, h4 {
+  
+  /* Navigation / sidebar */
+  nav {
+    flex: 0 0 var(--nav-width);
+    background: #f8f9fa; /* Wikipedia-style sidebar color */
+    border-right: 1px solid var(--color-border);
+    padding: 2rem 1rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    font-size: 0.95rem;
+  }
+  
+  nav h2 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.25rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  nav li {
+    margin-bottom: 0.5rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--color-text);
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    color: var(--color-accent);
+  }
+  
+  /* Main content */
+  main {
+    flex: 1; /* take remaining space */
+    padding: 2rem 3rem; /* space from nav */
+    max-width: 900px;
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     color: var(--color-accent);
     line-height: 1.2;
@@ -33,35 +82,19 @@
     margin-bottom: 1rem;
   }
   
-  h1 { font-size: 2rem; border-bottom: 2px solid var(--color-border); padding-bottom: 0.5rem; }
-  h2 { font-size: 1.5rem; margin-top: 2.5rem; }
-  h3 { font-size: 1.25rem; }
-  h4 { font-size: 1.1rem; }
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.2rem; }
+  h5 { font-size: 1rem; }
+  h6 { font-size: 0.9rem; }
   
+  p { margin: 1rem 0; }
+  ul, ol { margin: 1rem 0 1rem 2rem; }
+  li { margin-bottom: 0.5rem; }
   
-  p {
-    margin: 1rem 0;
-  }
-  
-  ul, ol {
-    margin: 1rem 0 1rem 2rem;
-  }
-  
-  li {
-    margin-bottom: 0.5rem;
-  }
-  
-  
-  figure {
-    margin: 2rem 0;
-    text-align: center;
-  }
-  
-  figcaption {
-    font-size: 0.9rem;
-    color: var(--color-muted);
-    margin-top: 0.5rem;
-  }
+  figure { margin: 2rem 0; text-align: center; }
+  figcaption { font-size: 0.9rem; color: var(--color-muted); margin-top: 0.5rem; }
   
   legend, .note {
     background: var(--color-note-bg);
@@ -71,7 +104,6 @@
     font-size: 0.95rem;
     color: var(--color-muted);
   }
-  
   
   table {
     width: 100%;
@@ -90,10 +122,9 @@
     font-weight: bold;
   }
   
-  
   .sr-only {
     border: 0;
-    clip: rect(0, 0, 0, 0);
+    clip: rect(0,0,0,0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -102,3 +133,28 @@
     white-space: nowrap;
     width: 1px;
   }
+  
+  footer {
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: var(--color-muted);
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 900px) {
+    body {
+      flex-direction: column;
+    }
+    nav {
+      width: 100%;
+      height: auto;
+      position: relative;
+      border-right: none;
+      border-bottom: 1px solid var(--color-border);
+    }
+    main {
+      padding: 2rem 1rem;
+      max-width: 100%;
+    }
+  }
+  
