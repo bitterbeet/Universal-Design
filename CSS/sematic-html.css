@@ -157,4 +157,9 @@
       max-width: 100%;
     }
   }
-  
+  img {
+    max-width: 100%;   /* keeps image inside its container */
+    height: auto;      /* keeps correct aspect ratio */
+    display: block;    /* removes extra bottom whitespace */
+    margin: 0 auto;    /* centers image in its container */
+  }  
