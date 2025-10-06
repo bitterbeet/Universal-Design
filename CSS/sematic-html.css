@@ -1,14 +1,15 @@
 :root {
-    --font-body: "Georgia", serif;
-    --font-heading: "Helvetica Neue", Arial, sans-serif;
-    --color-text: #222;
-    --color-muted: #555;
-    --color-background: #fff;
-    --color-accent: #000;
-    --color-border: #ddd;
-    --color-note-bg: #f9f9f9;
-    --nav-width: 220px;
-  }
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Playfair Display", serif;
+
+  --color-text: #222;
+  --color-muted: #555;
+  --color-background: #fff;
+  --color-accent: #0072B2; /* Accessible blue */
+  --color-border: #ddd;
+  --color-note-bg: #f9f9f9;
+  --nav-width: 220px;
+}
   .container {
     max-width: auto;   
     margin: 0 auto;     
@@ -71,9 +72,14 @@
   }
   
   nav a:hover {
-    text-decoration: underline;
-    color: var(--color-accent);
-  }
+  color: #005f8d; /* slightly darker for better hover contrast */
+}
+
+legend, .note {
+  background: #f0f6fc; /* more visible on white */
+  border-left: 4px solid var(--color-accent);
+  color: var(--color-text);
+}
 
   main {
     flex: 1; 
