@@ -6,21 +6,16 @@
   <meta name="description" content="RiverCare dashboard with accessible data tables, volunteer form, and skip navigation." />
   <title>RiverCare — Accessible Semantic HTML5 Demo</title>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Google Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- External stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <!-- Hidden main title for document outline -->
   <h1 class="sr-only">RiverCare Accessible HTML5 Demo Page</h1>
 
-  <!-- Skip Navigation -->
   <div class="skip-links">
     <a href="#main">Skip to main content</a>
     <div class="skip-menu" role="region" aria-label="Skip navigation menu">
@@ -35,7 +30,6 @@
     </div>
   </div>
 
-  <!-- Site Header -->
   <header role="banner">
     <h2 class="sr-only">Site Header</h2>
 
@@ -57,7 +51,6 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main id="main" tabindex="-1">
     <!-- Overview Section -->
     <section id="overview" class="card">
@@ -65,7 +58,6 @@
       <p>The RiverCare program coordinates restoration work along the Kestrel River system. Our mission is to stabilize banks, restore native vegetation, and improve water quality through community and tribal collaboration.</p>
     </section>
 
-    <!-- Article with Projects and Volunteer Form -->
     <article class="grid" aria-labelledby="project-and-volunteer">
       <h2 id="project-and-volunteer">Projects and Volunteer Opportunities</h2>
 
@@ -155,7 +147,6 @@
       </aside>
     </article>
 
-    <!-- Data Section -->
     <section id="data" class="card">
       <h2>Water Quality Data — October 2025</h2>
       <p>Below are the most recent turbidity and temperature readings collected by volunteers and staff at three sites.</p>
@@ -192,7 +183,6 @@
       </table>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="card">
       <h2>Contact Information</h2>
       <address>
@@ -203,14 +193,12 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer role="contentinfo">
     <h2 class="sr-only">Site Footer</h2>
     <p>© 2025 RiverCare — Community Restoration Network.</p>
     <p>This page validates with HTML Validator, WAVE, Silktide, and HTML Outliner.</p>
   </footer>
 
-  <!-- Decorative Material Icon -->
   <div class="floating-icon" aria-hidden="true">
     <span class="material-icons">water_drop</span>
   </div>
