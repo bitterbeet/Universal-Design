@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="RiverCare dashboard with accessible data tables, volunteer form, and skip navigation.">
-  <title>RiverCare — Accessible Semantic HTML5</title>
+  <title>RiverCare — Accessible Semantic HTML5 Demo</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,17 +21,20 @@
 </head>
 
 <body>
-  <h1 class="sr-only">RiverCare Accessible Semantic HTML5</h1>
+
+  <h1 class="sr-only">RiverCare Accessible Semantic HTML5 Demonstration</h1>
 
   <div class="skip-links">
     <a href="#main">Skip to main content</a>
   </div>
 
+  <header>
+    <h2 class="sr-only">Site Header</h2>
     <div class="site-brand">
       <div class="brand-logo" aria-hidden="true">RC</div>
       <div class="brand-title">
-        <p class="brand-name">RiverCare</p>
-        <p class="tagline">Community-led river restoration projects</p>
+        <h1>RiverCare</h1>
+        <p>Community-led river restoration projects</p>
       </div>
     </div>
 
@@ -48,6 +51,7 @@
   </header>
 
   <main id="main" tabindex="-1">
+
     <section id="overview" class="card">
       <h2>RiverCare Restoration Overview</h2>
       <p>The RiverCare program coordinates restoration work along the Kestrel River system. Our mission is to stabilize banks, restore native vegetation, and improve water quality through community and tribal collaboration.</p>
@@ -98,6 +102,7 @@
       </section>
 
       <aside id="volunteer" class="card">
+        <h2 class="sr-only">Volunteer Sign-Up Section</h2>
         <h3>Volunteer Sign-Up</h3>
         <p>Join a weekend planting or weekday monitoring shift. No prior experience required.</p>
 
@@ -200,4 +205,3 @@
   </div>
 </body>
 </html>
-
