@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="RiverCare dashboard with accessible data tables, volunteer form, and skip navigation." />
+  <title>RiverCare — Accessible Semantic HTML5 Demo</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Hidden main title for document outline -->
+  <h1 class="sr-only">RiverCare Accessible HTML5 Demo Page</h1>
+
+  <!-- Skip Navigation -->
+  <div class="skip-links">
+    <a href="#main">Skip to main content</a>
+    <div class="skip-menu" role="region" aria-label="Skip navigation menu">
+      <nav aria-labelledby="skipnav-heading">
+        <h2 id="skipnav-heading" class="sr-only">Skip Navigation Menu</h2>
+        <a href="#overview">Overview</a>
+        <a href="#projects">Projects</a>
+        <a href="#data">Data</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header role="banner">
+    <h2 class="sr-only">Site Header</h2>
+
+    <div class="site-brand">
+      <div class="brand-logo" aria-hidden="true">RC</div>
+      <div class="brand-title">
+        <h2>RiverCare</h2>
+        <p>Community-led river restoration projects</p>
+      </div>
+    </div>
+
+    <nav aria-labelledby="primarynav-heading">
+      <h2 id="primarynav-heading" class="sr-only">Primary Navigation</h2>
+      <a href="#overview">Overview</a>
+      <a href="#projects">Projects</a>
+      <a href="#data">Data</a>
+      <a href="#volunteer">Volunteer</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" tabindex="-1">
+    <!-- Overview Section -->
+    <section id="overview" class="card">
+      <h2>RiverCare Restoration Overview</h2>
+      <p>The RiverCare program coordinates restoration work along the Kestrel River system. Our mission is to stabilize banks, restore native vegetation, and improve water quality through community and tribal collaboration.</p>
+    </section>
+
+    <!-- Article with Projects and Volunteer Form -->
+    <article class="grid" aria-labelledby="project-and-volunteer">
+      <h2 id="project-and-volunteer">Projects and Volunteer Opportunities</h2>
+
+      <section id="projects" class="card">
+        <h3>Current Restoration Projects</h3>
+        <p class="lead">Active projects for the 2025 field season:</p>
+
+        <table>
+          <caption>Active restoration projects — 2025 season</caption>
+          <thead>
+            <tr>
+              <th scope="col">Project</th>
+              <th scope="col">Phase</th>
+              <th scope="col">Lead</th>
+              <th scope="col">Start Date</th>
+              <th scope="col">Progress</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bank Stabilization — Lower Kestrel</td>
+              <td>Implementation</td>
+              <td>RiverCare Field Team</td>
+              <td><time datetime="2025-03-12">Mar 12, 2025</time></td>
+              <td><span class="status-chip status--ontrack">On track</span></td>
+            </tr>
+            <tr>
+              <td>Invasive Reed Removal</td>
+              <td>Monitoring</td>
+              <td>Friends of Kestrel</td>
+              <td><time datetime="2024-09-01">Sep 1, 2024</time></td>
+              <td><span class="status-chip status--delayed">Delayed</span></td>
+            </tr>
+            <tr>
+              <td>Native Willow Replanting</td>
+              <td>Completed</td>
+              <td>Tribal Restoration Corps</td>
+              <td><time datetime="2023-11-20">Nov 20, 2023</time></td>
+              <td><span class="status-chip status--complete">Complete</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <aside id="volunteer" class="card" role="complementary">
+        <h3>Volunteer Sign-Up</h3>
+        <p>Join a weekend planting or weekday monitoring shift. No prior experience required.</p>
+
+        <form action="#" method="post" novalidate>
+          <fieldset>
+            <legend class="sr-only">Volunteer Information</legend>
+
+            <div class="row">
+              <div class="field">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" required autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required autocomplete="email">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="availability">Availability</label>
+              <select id="availability" name="availability" required>
+                <option value="">Select one</option>
+                <option value="saturday">Saturday mornings</option>
+                <option value="weekday">Weekday evenings</option>
+                <option value="flexible">Flexible</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="skills">Relevant Skills or Interests</label>
+              <textarea id="skills" name="skills" placeholder="e.g., plant ID, data entry, trail work"></textarea>
+            </div>
+
+            <div class="field checkbox">
+              <input id="consent" name="consent" type="checkbox" required>
+              <label for="consent">I agree to RiverCare’s safety and photo guidelines.</label>
+            </div>
+
+            <button type="submit">Sign Up</button>
+          </fieldset>
+        </form>
+      </aside>
+    </article>
+
+    <!-- Data Section -->
+    <section id="data" class="card">
+      <h2>Water Quality Data — October 2025</h2>
+      <p>Below are the most recent turbidity and temperature readings collected by volunteers and staff at three sites.</p>
+      <table>
+        <caption>Recent turbidity and temperature readings</caption>
+        <thead>
+          <tr>
+            <th scope="col">Site</th>
+            <th scope="col">Turbidity (NTU)</th>
+            <th scope="col">Temperature (°C)</th>
+            <th scope="col">Comments</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Upper Kestrel (Bridge)</td>
+            <td>4.2</td>
+            <td>12.1</td>
+            <td>Clear after rainfall</td>
+          </tr>
+          <tr>
+            <td>Middle Kestrel (Meadow)</td>
+            <td>9.8</td>
+            <td>13.4</td>
+            <td>Minor sediment movement</td>
+          </tr>
+          <tr>
+            <td>Lower Kestrel (Mouth)</td>
+            <td>6.1</td>
+            <td>11.9</td>
+            <td>Stable vegetation</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="card">
+      <h2>Contact Information</h2>
+      <address>
+        Field Office: 101 Meadow Lane, Kestrel City<br>
+        Email: <a href="mailto:info@rivercare.org">info@rivercare.org</a><br>
+        Phone: <a href="tel:+13035551212">(303) 555-1212</a>
+      </address>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <h2 class="sr-only">Site Footer</h2>
+    <p>© 2025 RiverCare — Community Restoration Network.</p>
+    <p>This page validates with HTML Validator, WAVE, Silktide, and HTML Outliner.</p>
+  </footer>
+
+  <!-- Decorative Material Icon -->
+  <div class="floating-icon" aria-hidden="true">
+    <span class="material-icons">water_drop</span>
+  </div>
+</body>
+</html>
