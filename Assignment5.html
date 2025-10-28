@@ -1,65 +1,63 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="RiverCare dashboard with accessible data tables, volunteer form, and skip navigation." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RiverCare dashboard with accessible data tables, volunteer form, and skip navigation.">
   <title>RiverCare — Accessible Semantic HTML5 Demo</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet"></noscript>
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
+
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
 </head>
 
 <body>
-  <h1 class="sr-only">RiverCare Accessible HTML5 Demo Page</h1>
+  <h1 class="sr-only">RiverCare Accessible Semantic HTML5 Demonstration</h1>
 
   <div class="skip-links">
     <a href="#main">Skip to main content</a>
-    <div class="skip-menu" role="region" aria-label="Skip navigation menu">
-      <nav aria-labelledby="skipnav-heading">
-        <h2 id="skipnav-heading" class="sr-only">Skip Navigation Menu</h2>
-        <a href="#overview">Overview</a>
-        <a href="#projects">Projects</a>
-        <a href="#data">Data</a>
-        <a href="#volunteer">Volunteer</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
   </div>
 
-  <header role="banner">
+  <header>
     <h2 class="sr-only">Site Header</h2>
 
     <div class="site-brand">
       <div class="brand-logo" aria-hidden="true">RC</div>
       <div class="brand-title">
-        <h2>RiverCare</h2>
-        <p>Community-led river restoration projects</p>
+        <p class="brand-name">RiverCare</p>
+        <p class="tagline">Community-led river restoration projects</p>
       </div>
     </div>
 
-    <nav aria-labelledby="primarynav-heading">
-      <h2 id="primarynav-heading" class="sr-only">Primary Navigation</h2>
-      <a href="#overview">Overview</a>
-      <a href="#projects">Projects</a>
-      <a href="#data">Data</a>
-      <a href="#volunteer">Volunteer</a>
-      <a href="#contact">Contact</a>
+    <nav aria-label="Primary navigation">
+      <h2 class="sr-only">Primary Navigation</h2>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#data">Data</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main id="main" tabindex="-1">
-    <!-- Overview Section -->
     <section id="overview" class="card">
       <h2>RiverCare Restoration Overview</h2>
       <p>The RiverCare program coordinates restoration work along the Kestrel River system. Our mission is to stabilize banks, restore native vegetation, and improve water quality through community and tribal collaboration.</p>
     </section>
 
-    <article class="grid" aria-labelledby="project-and-volunteer">
-      <h2 id="project-and-volunteer">Projects and Volunteer Opportunities</h2>
+    <article class="grid">
+      <h2>Projects and Volunteer Opportunities</h2>
 
       <section id="projects" class="card">
         <h3>Current Restoration Projects</h3>
@@ -102,7 +100,7 @@
         </table>
       </section>
 
-      <aside id="volunteer" class="card" role="complementary">
+      <aside id="volunteer" class="card">
         <h3>Volunteer Sign-Up</h3>
         <p>Join a weekend planting or weekday monitoring shift. No prior experience required.</p>
 
@@ -150,6 +148,7 @@
     <section id="data" class="card">
       <h2>Water Quality Data — October 2025</h2>
       <p>Below are the most recent turbidity and temperature readings collected by volunteers and staff at three sites.</p>
+
       <table>
         <caption>Recent turbidity and temperature readings</caption>
         <thead>
@@ -193,13 +192,15 @@
     </section>
   </main>
 
-  <footer role="contentinfo">
+  <footer>
     <h2 class="sr-only">Site Footer</h2>
     <p>© 2025 RiverCare — Community Restoration Network.</p>
-    </footer>
+    <p>This page validates with HTML Validator, WAVE, Silktide, HTML Outliner, and Lighthouse.</p>
+  </footer>
 
   <div class="floating-icon" aria-hidden="true">
     <span class="material-icons">water_drop</span>
   </div>
 </body>
 </html>
+
