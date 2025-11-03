@@ -128,10 +128,12 @@ footer {
 
   #aside-left {
     text-align: right;
+    color: #fff;
   }
 
   #aside-right {
     text-align: left;
+    color: #fff;
   }
 }
 
