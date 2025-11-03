@@ -87,14 +87,14 @@ main {
   grid-area: aside-left;
   background: #9B5677;
   padding: 1rem;
-  color: #fff; /* Added: white text */
+  color: #fff; 
 }
 
 #aside-right {
   grid-area: aside-right;
   background: #517051;
   padding: 1rem;
-  color: #fff; /* Added: white text */
+  color: #fff; 
 }
 
 footer {
