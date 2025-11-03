@@ -1,10 +1,10 @@
 :root {
-  --color-bg: #f9f9f9;
-  --color-primary: #1a73e8;
-  --color-secondary: #ffb300;
+  --color-bg: #F04E9C;
+  --color-primary: #53B054;
+  --color-secondary: #F04E9C;
   --color-text: #222;
-  --color-accent: #00796b;
-  --color-footer: #333;
+  --color-accent: #463E42;
+  --color-footer: #463E42;
   --font-body: "Lato", sans-serif;
   --font-heading: "Merriweather", serif;
 }
@@ -26,12 +26,12 @@ body {
   grid-template-areas:
     "header"
     "nav"
-    "aside-left"
     "main"
+    "aside-left"
     "aside-right"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto 1fr auto auto;
+  grid-template-rows: auto auto 1fr auto auto auto;
   min-height: 100vh;
 }
 
@@ -77,21 +77,21 @@ nav a:focus {
   color: var(--color-accent);
 }
 
-#aside-left {
-  grid-area: aside-left;
-  background: #e3f2fd;
-  padding: 1rem;
-}
-
 main {
   grid-area: main;
   padding: 1rem;
   background: #fff;
 }
 
+#aside-left {
+  grid-area: aside-left;
+  background: #9B5677;
+  padding: 1rem;
+}
+
 #aside-right {
   grid-area: aside-right;
-  background: #e0f7fa;
+  background: #517051;
   padding: 1rem;
 }
 
@@ -118,9 +118,18 @@ footer {
     grid-template-areas:
       "header header"
       "nav nav"
-      "aside-left main"
-      "aside-right footer";
-    grid-template-columns: 1fr 2fr;
+      "main main"
+      "aside-left aside-right"
+      "footer footer";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #aside-left {
+    text-align: right;
+  }
+
+  #aside-right {
+    text-align: left;
   }
 }
 
