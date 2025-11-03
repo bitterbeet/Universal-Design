@@ -7,9 +7,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="CSS/Assignment6.css" />
-
+    
 </head>
 <body>
-    
+  <header>
+    <h1>Accessible Grid + Flex Layout</h1>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <h2 class="visually-hidden">Main navigation</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Main Content</h2>
+    <p>This page demonstrates a 2D layout using CSS Grid and a responsive, accessible design. Resize your browser to see the layout adapt for tablet and mobile devices.</p>
+  </main>
+
+  <aside id="aside-left">
+    <h2 class="visually-hidden">Left Sidebar</h2>
+    <p>This is the left sidebar area — useful for extra info or related links.</p>
+  </aside>
+
+  <aside id="aside-right">
+    <h2 class="visually-hidden">Right Sidebar</h2>
+    <p>This is the right sidebar — perhaps for ads, quotes, or callouts.</p>
+  </aside>
+
+  <footer>
+    <h2 class="visually-hidden">Footer</h2>
+    <p>&copy; 2025 Accessible Web Design Lab</p>
+  </footer>
 </body>
 </html>
