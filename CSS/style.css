@@ -14,7 +14,6 @@ body {
   margin: 0;
 }
 
-/* Skip link */
 .skip-link {
   position: absolute;
   top: -40px;
@@ -29,7 +28,6 @@ body {
   top: 0;
 }
 
-/* Header and navigation */
 header {
   background: var(--accent-color);
   color: white;
@@ -39,7 +37,7 @@ header {
 
 nav ul {
   display: flex;
-  justify-content: center; /* centers navigation */
+  justify-content: center; 
   flex-wrap: wrap;
   gap: 1.5rem;
   list-style: none;
@@ -59,7 +57,6 @@ nav a:focus {
   text-decoration: underline;
 }
 
-/* About Me section */
 .about-me {
   text-align: center;
   padding: 2rem;
@@ -73,11 +70,11 @@ nav a:focus {
 .about-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centers content horizontally */
+  align-items: center; 
   justify-content: center;
   gap: 1.5rem;
   max-width: 700px;
-  margin: 0 auto; /* centers the block itself */
+  margin: 0 auto; 
 }
 
 .profile-img {
@@ -86,7 +83,6 @@ nav a:focus {
   display: block;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -94,7 +90,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* Responsive adjustments */
 @media (min-width: 700px) {
   .about-container {
     flex-direction: row;
