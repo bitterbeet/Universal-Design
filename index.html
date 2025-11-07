@@ -3,22 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Me - Home</title>
+  <title>About Me - Amelia James</title>
   <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
-  <nav>
-    <h2 class="sr-only">Main navigation</h2>
-    <ul>
-      <li><a href="sematic-outline.html">Sematic HTML Wiki Page</a></li>
-      <li><a href="Assignment5.html">Tables, Forms, Tabbed Browsing, and Screen Reading</a>
-      <li><a href="Assignment6.html">Accessible CSS Layout</a>
-    </ul>
-  </nav>
-  <h1>Amelia James</h1>
 
-  <p>
-    Hello, my name is Amelia! I'm a senior and my major is CTD. I enjoy hiking, painting, and cats.
-  </p>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <h1>Amelia James</h1>
+    <nav aria-label="Main navigation">
+      <h2 class="sr-only">Main navigation</h2>
+      <ul>
+        <li><a href="semantic-outline.html">Lab #2 - Coding & Posting a Web Page</a></li>
+        <li><a href="Assignment5.html">Lab #3 - Tables, Forms, Tabbed Browsing, and Screen Reading</a></li>
+        <li><a href="Assignment6.html">Lab #4 - Accessible CSS Layout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="about-me">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <img src="buffonecardphoto2.jpeg" alt="Portrait of Amelia James" class="profile-img">
+        <p>
+          Hello, my name is Amelia! I’m a senior majoring in CTD with a focus on creative digital design. 
+          I love exploring how technology and art intersect to tell meaningful stories. Outside of class, 
+          I enjoy hiking, painting, and spending time with my cats. I’m passionate about creating accessible, 
+          inclusive designs that make digital spaces enjoyable for everyone.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 Amelia James.</p>
+  </footer>
 </body>
 </html>

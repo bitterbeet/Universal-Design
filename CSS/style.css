@@ -1,17 +1,107 @@
+:root {
+  --bg-color: #f8f8f8;
+  --text-color: #222;
+  --accent-color: #2a7a7b;
+  --font-body: "Lato", sans-serif;
+  --font-heading: "Merriweather", serif;
+}
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: #e09f9f;
-  color: #2a2834;
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: var(--bg-color);
   line-height: 1.6;
+  margin: 0;
 }
-h1 {
-  color: #2a2834;
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--accent-color);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header and navigation */
+header {
+  background: var(--accent-color);
+  color: white;
   text-align: center;
+  padding: 1rem;
 }
+
+nav ul {
+  display: flex;
+  justify-content: center; /* centers navigation */
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* About Me section */
 .about-me {
-  margin-top: 30px;
+  text-align: center;
+  padding: 2rem;
 }
+
+.about-me h2 {
+  font-family: var(--font-heading);
+  margin-bottom: 1rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers content horizontally */
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto; /* centers the block itself */
+}
+
+.profile-img {
+  max-width: 180px;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ddd;
+  margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 700px) {
+  .about-container {
+    flex-direction: row;
+    text-align: left;
+  }
+  .about-container p {
+    max-width: 450px;
+  }
+}
+
