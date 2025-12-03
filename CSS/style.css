@@ -64,7 +64,7 @@ header {
   font-size: 1.1rem; /* bigger nav items */
 }
 
-/* Dropdown container */
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -95,9 +95,6 @@ header {
   display: block;
 }
 
-/* --------------------------------------
-   ABOUT ME SECTION
--------------------------------------- */
 .about-me {
   text-align: center;
   padding: 2rem;
@@ -124,9 +121,6 @@ header {
   display: block;
 }
 
-/* --------------------------------------
-   FOOTER
--------------------------------------- */
 footer {
   text-align: center;
   padding: 1rem;
@@ -134,9 +128,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* --------------------------------------
-   RESPONSIVE LAYOUT
--------------------------------------- */
 @media (min-width: 700px) {
   .about-container {
     flex-direction: row;
