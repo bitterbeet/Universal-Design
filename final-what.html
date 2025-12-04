@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="What universal design means — principles and examples." />
+  <title>Universal Design — What</title>
+  <link rel="stylesheet" href="UniversalDesign.css">
+</head>
+
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+  <!-- Accessible Header + Title -->
+  <header>
+      <h1 id="site-title">Universal Design — What</h1>
+  </header>
+
+  <!-- Primary Navigation -->
+     <h2 id="nav-title" class="sr-only">Main Navigation</h2>
+    <ul>
+        <li><a href="UniversalDesign.html" aria-current="page">Home</a></li>
+        <li><a href="final-why.html">Why</a></li>
+        <li><a href="final-what.html">What</a></li>
+        <li><a href="final-how.html">How</a></li>
+    </ul>
+</nav>
+
+
+  <!-- Main Content -->
+  <main id="main-content">
+      <article aria-labelledby="what-heading">
+
+          <h2 id="what-heading">What is Universal Design?</h2>
+
+          <p>
+            Universal design blends accessibility, inclusive language/content, and resilient code. 
+            It means designing so the most people possible can perceive, operate, understand, and interact with the interface.
+          </p>
+
+          <section aria-labelledby="principles-heading">
+              <h3 id="principles-heading">Principles (short)</h3>
+              <ul>
+                  <li><strong>Perceivable:</strong> information must be presented in ways people can perceive (text alternatives, captions, good contrast).</li>
+                  <li><strong>Operable:</strong> interface controls must be usable by keyboard and assistive tech.</li>
+                  <li><strong>Understandable:</strong> content and UI behavior should be predictable & clear.</li>
+                  <li><strong>Robust:</strong> work across devices, agents, and years of tech (semantic markup, ARIA when needed).</li>
+              </ul>
+          </section>
+
+          <section aria-labelledby="examples-heading">
+              <h3 id="examples-heading">Concrete examples</h3>
+
+              <h4>Design</h4>
+              <p>Use scalable type (rem units), contrast tokens, flexible layouts, and motion reduction options. Avoid color-only UI cues.</p>
+
+              <h4>Content</h4>
+              <p>Write clear headings, short paragraphs, link context, and use descriptive alt text for images.</p>
+
+              <h4>Code</h4>
+              <p>Prefer semantic elements: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;button&gt;</code>. Use ARIA only to enhance semantics that HTML cannot express.</p>
+          </section>
+
+          <section aria-labelledby="snippet-heading">
+              <h3 id="snippet-heading">Tiny code snippet (semantic & accessible)</h3>
+              <pre><code>&lt;button aria-pressed="false"&gt;Like&lt;/button&gt;
+&lt;img src="cover.jpg" alt="Person sketching with a wide smile"&gt;
+&lt;a href="/docs" title="Read the full guide on universal design"&gt;Full guide&lt;/a&gt;
+</code></pre>
+          </section>
+
+      </article>
+  </main>
+
+  <footer>
+      <p><a href="UniversalDesign.html">← Back to Home</a></p>
+  </footer>
+
+</body>
+</html>

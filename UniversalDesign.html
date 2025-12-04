@@ -7,30 +7,66 @@
     <link rel="stylesheet" href="UniversalDesign.css">
 </head>
 <body>
+
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <!-- Header with accessible site title -->
     <header>
-        <h1>Universal Design Final</h1> 
+        <h1 id="site-title">Universal Design</h1>
     </header>
 
-        <nav>
+    <!-- Main Navigation -->
+    <h2 id="nav-title" class="sr-only">Main Navigation</h2>
+    <ul>
+        <li><a href="UniversalDesign.html" aria-current="page">Home</a></li>
+        <li><a href="final-why.html">Why</a></li>
+        <li><a href="final-what.html">What</a></li>
+        <li><a href="final-how.html">How</a></li>
+    </ul>
+</nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        
+        <!-- Intro Section -->
+        <section id="paragraph1">
+            <h2>How to Design for Everyone</h2>
+            <p>
+                The web should be accessible to all users, regardless of ability or device. Universal design moves accessibility from a compliance checkbox to a design philosophy that benefits everyone: faster interfaces, clearer content, inclusive branding, better SEO, and fewer legal headaches.
+            </p>
+        </section>
+
+        <!-- Navigation Section -->
+        <section id="paragraph2">
+            <h2>Explore Our Sections</h2>
+            <p>Click below to learn more about the key pillars of universal design:</p>
             <ul>
-                <li><a href="final-homepage.html">Home</a></li>
-                <li><a href="final-why.html">Why</a></li>
-                <li><a href="final-what.html">What</a></li>
-                <li><a href="final-how.html">How</a></li>
+                <li><a href="final-why.html">Why</a> — Persuasive arguments for accessibility.</li>
+                <li><a href="final-what.html">What</a> — Principles and examples of universal design.</li>
+                <li><a href="final-how.html">How</a> — Technical implementation tips and testing checklists.</li>
             </ul>
-        </nav>
-         <main>
-            <section id="paragraph1">
-                <h2>How to design for everyone</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus suscipit rhoncus. Proin sit amet ligula maximus, eleifend dolor id, laoreet augue. Cras bibendum dolor ac lectus pulvinar ultrices. Sed eget tincidunt elit. Curabitur blandit id ante nec molestie. Duis vel dui finibus neque tempus venenatis id eu urna. Donec quis laoreet odio. Aliquam tempor cursus ipsum, sed vulputate odio fringilla id. Mauris mollis ultrices finibus. Aliquam ut odio et nibh pulvinar dictum. Etiam aliquam laoreet malesuada. Quisque a libero nibh.</p>
-            </section>
-            <section id="paragraph2">
-                <h2>Why, What and How:</h2>
-                <ul>
-                    <li><a href="final-why.html">Why</a></li>
-                    <li><a href="final-what.html">What</a></li>
-                    <li><a href="final-how.html">How</a></li>
-                </ul>
-            </section>
+        </section>
+
+        <!-- Practices Learned Section -->
+        <section id="practices">
+            <h2>Important Practices</h2>
+            <ol>
+                <li>Semantic HTML — Using meaningful elements for structure.</li>
+                <li>Super Specific Semantic Markup — Proper headings, lists, and ARIA labels.</li>
+                <li>Skip Navigation — Jump straight to main content.</li>
+                <li>HTML Tables — Presenting structured data accessibly.</li>
+                <li>HTML Forms — Accessible labels, legends, and error handling.</li>
+                <li>CSS Grid & Flexbox — Responsive layout and alignment techniques.</li>
+            </ol>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Universal Design Final</p>
+    </footer>
+
 </body>
 </html>
