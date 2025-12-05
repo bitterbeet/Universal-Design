@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="How to implement universal design — technical tips and testing checklist." />
   <title>Universal Design — How</title>
   <link rel="stylesheet" href="UniversalDesign.css">
@@ -19,7 +19,7 @@
   </header>
 
   <!-- Primary Navigation -->
-  <nav>
+  <nav role="navigation">
       <h2 id="nav-title" class="sr-only">Main Navigation</h2>
       <ul>
           <li><a href="UniversalDesign.html" aria-current="page">Home</a></li>
@@ -31,47 +31,50 @@
 
   <!-- Main Content -->
   <main id="main-content">
+    <article>
+      <h2 id="how-heading">How to Implement Universal Design</h2>
 
-          <h2 id="how-heading">How to Implement Universal Design</h2>
+      <p>
+        Universal Design becomes meaningful when applied in practice. One of the most reliable ways to do this is by following established accessibility standards, particularly the Web Content Accessibility Guidelines (WCAG). WCAG provides concrete, measurable recommendations to make digital content usable for people with a wide range of abilities, including those with visual, cognitive, or motor challenges, as well as users on mobile devices.
+      </p>
 
-          <p>
-            Universal Design becomes meaningful when applied in practice. One of the most reliable ways to do this is by following established accessibility standards, particularly the Web Content Accessibility Guidelines (WCAG). WCAG provides concrete, measurable recommendations to make digital content usable for people with a wide range of abilities, including those with visual, cognitive, or motor challenges, as well as users on mobile devices.
-          </p>
+      <h3 id="technical-heading">Applying WCAG Principles</h3>
+      <p>
+        WCAG 2.0 and 2.1 translate Universal Design principles into actionable steps, such as:
+      </p>
+      <ul>
+          <li><strong>Text alternatives for images:</strong> so screen readers can convey information.</li>
+          <li><strong>Full keyboard navigation:</strong> for users who cannot use a mouse.</li>
+          <li><strong>Predictable layouts</strong> and consistent navigation patterns.</li>
+          <li><strong>Strong color contrast:</strong> to make content readable for all users.</li>
+      </ul>
 
-              <h3 id="technical-heading">Applying WCAG Principles</h3>
-              <p>
-            WCAG 2.0 and 2.1 translate Universal Design principles into actionable steps, such as:</p>
-              <ul>
-                  <li><strong>Text alternatives for images:</strong> so screen readers can convey information.</li>
-                  <li><strong>Full keyboard navigation:</strong>for users who cannot use a mouse. </li>
-                  <li><strong>Predictable layouts</strong> and consistent navigation patterns.</li>
-                  <li><strong>Strong color contrast</strong> to make content readable for all users.</li>
-              </ul>
-            <p>
-            WCAG 2.1 expands on these guidelines to address modern digital challenges:
-            </p>
-                <ul>
-                    <li><strong>Responsive layouts </strong>that work in both portrait and landscape orientations without horizontal scrolling.</li>
-                    <li><strong>Input purpose identification</strong> so browsers can offer autofill for forms.</li>
-                    <li><strong>Adjustable text spacing</strong> and avoidance of disappearing hover content.</li>
-                    <li><strong>Adjustable or removable animations</strong> to reduce distraction or motion sensitivity.</li>
-                    <li><strong>Large, easy-to-tap targets</strong> for touchscreens.</li>
-                    <li><strong>Support for multiple input methods</strong> such as voice, touch, and keyboard.</li>
-                    <li><strong>Prevention of accidental actions</strong> and offering alternative ways to perform gestures.</li>
-                </ul>
-                <section id="integration">
-            <h3>Integrating Universal Design Into Your Process</h3>
-            <p>
-              Incorporating Universal Design into your workflow ensures accessibility is not an afterthought, but a foundation for all digital experiences. By considering accessibility from the beginning, designers and developers can:
-            </p>
-            <ul>
-              <li>Improve usability and accessibility for everyone, not just users with disabilities.</li>
-              <li>Create flexible, resilient designs that adapt to different devices, environments, and user needs.</li>
-              <li>Build inclusive, intuitive, and future-ready digital experiences.</li>
-              <li>Reduce the need for costly retrofits or redesigns by addressing accessibility early.</li>
-            </ul>
-          </section>
-      </article>
+      <p>
+        WCAG 2.1 expands on these guidelines to address modern digital challenges:
+      </p>
+      <ul>
+          <li><strong>Responsive layouts:</strong> that work in both portrait and landscape orientations without horizontal scrolling.</li>
+          <li><strong>Input purpose identification:</strong> so browsers can offer autofill for forms.</li>
+          <li><strong>Adjustable text spacing</strong> and avoidance of disappearing hover content.</li>
+          <li><strong>Adjustable or removable animations:</strong> to reduce distraction or motion sensitivity.</li>
+          <li><strong>Large, easy-to-tap targets:</strong> for touchscreens.</li>
+          <li><strong>Support for multiple input methods:</strong> such as voice, touch, and keyboard.</li>
+          <li><strong>Prevention of accidental actions:</strong> offering alternative ways to perform gestures.</li>
+      </ul>
+
+      <section id="integration">
+        <h3>Integrating Universal Design Into Your Process</h3>
+        <p>
+          Incorporating Universal Design into your workflow ensures accessibility is not an afterthought, but a foundation for all digital experiences. By considering accessibility from the beginning, designers and developers can:
+        </p>
+        <ul>
+          <li>Improve usability and accessibility for everyone, not just users with disabilities.</li>
+          <li>Create flexible, resilient designs that adapt to different devices, environments, and user needs.</li>
+          <li>Build inclusive, intuitive, and future-ready digital experiences.</li>
+          <li>Reduce the need for costly retrofits or redesigns by addressing accessibility early.</li>
+        </ul>
+      </section>
+    </article>
   </main>
 
   <footer>
