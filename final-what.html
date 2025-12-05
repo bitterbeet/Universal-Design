@@ -31,26 +31,24 @@
 
   <!-- Main Content -->
   <main id="main-content">
-      <article aria-labelledby="what-heading">
 
           <h2 id="what-heading">What is Universal Design?</h2>
 
           <p>
-            Universal design blends accessibility, inclusive language/content, and resilient code. 
-            It means designing so the most people possible can perceive, operate, understand, and interact with the interface.
+            Universal Design is a concept developed in the 1990s by architect and designer Ronald Mace, along with a team of innovators committed to creating environments and products usable by everyone, regardless of age, ability, or circumstance. Although Universal Design began in architecture and physical spaces, its principles translate seamlessly into modern digital design: the goal is the same—build experiences that everyone can access without needing special modifications.
           </p>
 
-          <section aria-labelledby="principles-heading">
-              <h3 id="principles-heading">Principles (short)</h3>
-              <ul>
-                  <li><strong>Perceivable:</strong> information must be presented in ways people can perceive (text alternatives, captions, good contrast).</li>
-                  <li><strong>Operable:</strong> interface controls must be usable by keyboard and assistive tech.</li>
-                  <li><strong>Understandable:</strong> content and UI behavior should be predictable & clear.</li>
-                  <li><strong>Robust:</strong> work across devices, agents, and years of tech (semantic markup, ARIA when needed).</li>
-              </ul>
+          
+              <h3 id="principles-heading">Principles</h3>
+              <ol>
+                  <li><strong>Equitable Use:</strong> Designs should work for all users without separating or excluding anyone. In digital spaces, this means practices like providing alt text, ensuring high color contrast, and avoiding interactions that depend solely on a mouse.</li>
+                  <li><strong>Flexibility in Use:</strong> Interfaces should accommodate different preferences and abilities. This includes allowing text resizing, supporting multiple input methods, and avoiding forced or restrictive behaviors such as scroll hijacking.</li>
+                  <li><strong>Simple and Intuitive Use:</strong> Users should be able to understand and use an interface without confusion. Clear structure, predictable navigation, and familiar patterns help ensure that interactions feel straightforward and aligned with user expectations.</li>
+                  <li><strong>Perceptible Information:</strong> Information should be communicated clearly to users with varied sensory abilities. Organized text, helpful graphics, labels, and offering information in multiple formats all help make content understandable.</li>
+              </ol>
           </section>
 
-          <section aria-labelledby="examples-heading">
+          
               <h3 id="examples-heading">Concrete examples</h3>
 
               <h4>Design</h4>
@@ -63,7 +61,7 @@
               <p>Prefer semantic elements: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;button&gt;</code>. Use ARIA only to enhance semantics that HTML cannot express.</p>
           </section>
 
-          <section aria-labelledby="snippet-heading">
+          
               <h3 id="snippet-heading">Tiny code snippet (semantic & accessible)</h3>
               <pre><code>&lt;button aria-pressed="false"&gt;Like&lt;/button&gt;
 &lt;img src="cover.jpg" alt="Person sketching with a wide smile"&gt;
