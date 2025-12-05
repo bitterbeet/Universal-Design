@@ -39,47 +39,27 @@
           </p>
 
               <h3 id="technical-heading">Applying WCAG Principles</h3>
+              <p>
+            WCAG 2.0 and 2.1 translate Universal Design principles into actionable steps, such as:</p>
               <ul>
-                  <li><strong>Text alternatives for images:</strong> use native elements (buttons, forms, headings). Avoid role replacements unless necessary.</li>
-                  <li><strong>Full keyboard navigation:</strong> ensure all interactive elements are reachable and follow logical DOM order. Visible focus styles.</li>
-                  <li><strong>Predictable layouts</strong> WCAG AA minimum for normal text (4.5:1). Provide high contrast themes and test with tools.</li>
-                  <li><strong>Strong color contrast</strong> descriptive alt text, captions for video, transcripts for audio.</li>
+                  <li><strong>Text alternatives for images:</strong> so screen readers can convey information.</li>
+                  <li><strong>Full keyboard navigation:</strong>for users who cannot use a mouse. </li>
+                  <li><strong>Predictable layouts</strong> and consistent navigation patterns.</li>
+                  <li><strong>Strong color contrast</strong> to make content readable for all users.</li>
               </ul>
+            <p>
+            WCAG 2.1 expands on these guidelines to address modern digital challenges:
+            </p>
+                <ul>
+                  <li><strong>Responsive layouts</strong> use native elements (buttons, forms, headings). Avoid role replacements unless necessary.</li>
+                  <li><strong>Input purpose identification</strong> ensure all interactive elements are reachable and follow logical DOM order. Visible focus styles.</li>
+                  <li><strong>Predictable layouts</strong> WCAG AA minimum for normal text (4.5:1). Provide high contrast themes and test with tools.</li>
+                  <li><strong>Adjustable or removable animations</strong> descriptive alt text, captions for video, transcripts for audio.</li>
+                  <li><strong>Large, easy-to-tap targets</strong> WCAG AA minimum for normal text (4.5:1). Provide high contrast themes and test with tools.</li>
+                  <li><strong>Support for multiple input methods</strong> descriptive alt text, captions for video, transcripts for audio.</li>
+                  <li><strong>Prevention of accidental actions</strong> descriptive alt text, captions for video, transcripts for audio.</li>
+                </ul>
           </section>
-
-              <h3 id="keyboard-heading">Keyboard & focus examples</h3>
-              <p>
-                Always use native focusable elements. If you must use a non-native control (e.g., a custom widget), use <code>tabindex</code>, keyboard handlers, and ARIA roles.
-              </p>
-              <pre><code>&lt;button class="primary"&gt;Submit&lt;/button&gt;
-&lt;div role="button" tabindex="0" aria-pressed="false"&gt;Custom toggle&lt;/div&gt;
-</code></pre>
-          </section>
-              <h3 id="testing-heading">Testing workflow (fast & repeatable)</h3>
-              <ol>
-                  <li>Keyboard only — tab through flows and act with Enter/Space.</li>
-                  <li>Screen reader check — NVDA/VoiceOver quick pass for key pages.</li>
-                  <li>Color contrast — automated tools + manual checks in high/low light.</li>
-                  <li>Mobile & zoom testing — pinch to zoom and inspect responsive breakpoints.</li>
-                  <li>Automated tests — aXe, Lighthouse, and CI runs on PRs.</li>
-              </ol>
-              <details>
-                  <summary>Quick terminal commands</summary>
-                  <pre><code># run axe CI check (example)
-npx @axe-core/cli "http://localhost:3000" --json > axe-report.json
-
-# Lighthouse (headless)
-npx lighthouse http://localhost:3000 --output html --output-path=lhreport.html
-</code></pre>
-              </details>
-          </section>
-
-              <h3 id="policy-heading">Design system & governance</h3>
-              <p>
-                Include accessibility in your design tokens and components. Add an a11y checklist to PR templates and require at least one accessibility reviewer on larger features.
-              </p>
-          </section>
-
       </article>
   </main>
 
