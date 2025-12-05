@@ -31,7 +31,6 @@
 
   <!-- Main Content -->
   <main id="main-content">
-      <article aria-labelledby="how-heading">
 
           <h2 id="how-heading">How to ship accessible, universal experiences</h2>
 
@@ -39,7 +38,6 @@
             Practical steps you can start on this week. Mobile-first, semantic, tested, and persuasive (sell it to your product owners!).
           </p>
 
-          <section aria-labelledby="technical-heading">
               <h3 id="technical-heading">Technical checklist</h3>
               <ul>
                   <li><strong>Semantic HTML:</strong> use native elements (buttons, forms, headings). Avoid role replacements unless necessary.</li>
@@ -53,7 +51,6 @@
               </ul>
           </section>
 
-          <section aria-labelledby="keyboard-heading">
               <h3 id="keyboard-heading">Keyboard & focus examples</h3>
               <p>
                 Always use native focusable elements. If you must use a non-native control (e.g., a custom widget), use <code>tabindex</code>, keyboard handlers, and ARIA roles.
@@ -62,8 +59,6 @@
 &lt;div role="button" tabindex="0" aria-pressed="false"&gt;Custom toggle&lt;/div&gt;
 </code></pre>
           </section>
-
-          <section aria-labelledby="testing-heading">
               <h3 id="testing-heading">Testing workflow (fast & repeatable)</h3>
               <ol>
                   <li>Keyboard only — tab through flows and act with Enter/Space.</li>
@@ -83,7 +78,6 @@ npx lighthouse http://localhost:3000 --output html --output-path=lhreport.html
               </details>
           </section>
 
-          <section aria-labelledby="policy-heading">
               <h3 id="policy-heading">Design system & governance</h3>
               <p>
                 Include accessibility in your design tokens and components. Add an a11y checklist to PR templates and require at least one accessibility reviewer on larger features.
